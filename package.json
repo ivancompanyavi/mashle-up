@@ -1,10 +1,20 @@
 {
   "name": "mashle-up",
   "version": "1.0.0",
+  "type": "module",
   "description": "Mashle Up",
   "main": "src/index.js",
   "scripts": {
-    "build": "scripts/build.mjs",
-    "dev": "nodemon src/index.js"
+    "build": "esbuild src/index.tsx --bundle --outdir=dist/js",
+    "dev": "esbuild src/index.tsx --bundle --outdir=dist/js --servedir=dist --watch"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.20.0"
   }
 }
