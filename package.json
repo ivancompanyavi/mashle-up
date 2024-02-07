@@ -1,0 +1,10 @@
+{
+  "name": "mashle-up",
+  "version": "1.0.0",
+  "description": "Mashle Up",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "scripts/build.mjs",
+    "dev": "nodemon src/index.js"
+  }
+}
